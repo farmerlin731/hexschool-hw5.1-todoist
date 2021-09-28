@@ -15,6 +15,7 @@ render();
 
 btnAdd.addEventListener('click', function (e) {
     let obj = {};
+    if(txtInput.value =='') return;
     obj.content = `${txtInput.value}`;
     obj.doneStatus = false;
     todoListData.push(obj);
